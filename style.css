@@ -61,6 +61,76 @@ section nav ul li a:hover::after {
     width: 100%;
 }
 
-section nav ul li a:hover{
+section nav ul li a:hover {
     color: #fac032;
 }
+
+section nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0 0.5s;
+}
+
+section nav .icon i:hover {
+    color: #fac032;
+}
+
+section .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 140px;
+}
+
+section .main .main_txt h1 {
+    position: relative;
+    font-size: 65px;
+    top: -60px;
+    left: 20px;
+}
+
+section .main .main_txt h1 span {
+    margin-left: 15px;
+    color: #fac032;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+section .main .main_img img{
+ position: relative;
+ width: 700px;
+ left: 70px;
+}
+section p{
+    
+    width: 670px;
+    text-align: justify;
+    position: relative;
+    left: 210px;
+    bottom: 100px;
+    line-height: 22px;
+}
+section .main_btn{
+    background: #fac032;
+    position: relative;
+    left: 210px;
+    bottom: 40px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+}
+section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
