@@ -225,7 +225,8 @@ section .main_btn:hover i {
     margin-left: 15px;
     font-family: mv boli;
 }
-.menu h1 span::after{
+
+.menu h1 span::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -234,46 +235,110 @@ section .main_btn:hover i {
     position: relative;
     bottom: 15px;
 }
-.menu .menu_box{
+
+.menu .menu_box {
     width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
 }
-.menu .menu_box .menu_card{
+
+.menu .menu_box .menu_card {
     width: 330px;
     height: 480px;
     padding-top: 10px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
 }
-.menu .menu_box .menu_card .menu_img{
+
+.menu .menu_box .menu_card .menu_img {
     width: 300px;
     height: 250px;
     margin: 0 auto;
-    overflow: hidden; 
+    overflow: hidden;
 }
-.menu .menu_box .menu_card .menu_img img{
- width: 100%;
- height: 100%;
- object-fit: cover;
- object-position: center;
- transition: 0.3s;
+
+.menu .menu_box .menu_card .menu_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
 }
-.menu .menu_box .menu_card .menu_img:hover img{
+
+.menu .menu_box .menu_card .menu_img:hover img {
     transform: scale(1.1);
 }
 
+.menu .menu_box .menu_card .small_card {
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -250px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
 
+.menu .menu_box .menu_card:hover .small_card {
+    position: relative;
+    top: -250px;
+    right: 20px;
+    opacity: 1;
+}
 
+.menu .menu_box .menu_card .small_card i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
 
+.menu .menu_box .menu_card .small_card i:hover {
+    color: #fac032;
+}
 
+.menu .menu_box .menu_card .menu_info h2 {
+    width: 60%;
+    text-align: center;
+    color: #fac032;
+    font-size: 25px;
+    margin: 10px auto 10px auto;
 
+}
 
+.menu .menu_box .menu_card .menu_info p {
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
 
+.menu .menu_box .menu_card .menu_info h3 {
+    text-align: center;
+    margin-top: 10px;
+}
 
-
-
-
-
+.menu .menu_box .menu_card .menu_info .menu_icon {
+    color: #fac032;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.menu .menu_box .menu_card .menu_info .menu_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    text-replace: 0.3s;
+    
+}
