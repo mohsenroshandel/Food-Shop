@@ -331,6 +331,7 @@ section .main_btn:hover i {
     text-align: center;
     margin: 10px 0 10px 0;
 }
+
 .menu .menu_box .menu_card .menu_info .menu_btn {
     display: flex;
     justify-content: center;
@@ -340,5 +341,102 @@ section .main_btn:hover i {
     padding: 8px 10px;
     margin: 0 80px;
     text-replace: 0.3s;
-    
+
+}
+
+/* Gallary */
+.gallary {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallary h1 {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallary h1 span {
+    margin-left: 15px;
+    color: #fac032;
+    font-family: mv boli;
+}
+
+.gallary h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac032;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary_img_box {
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallary .gallary_img_box .gallary_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.gallary .gallary_img_box .gallary_img img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.gallary .gallary_img_box .gallary_img:hover img {
+    opacity: 0.4;
+}
+
+.gallary .gallary_img_box .gallary_img h3 {
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #fac032;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallary .gallary_img_box .gallary_img:hover h3 {
+    opacity: 1;
+}
+.gallary .gallary_img_box .gallary_img p {
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    line-height: 22px;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+.gallary .gallary_img_box .gallary_img:hover p {
+    opacity: 1;
+}
+.gallary .gallary_img_box .gallary_img .gallary_btn {
+    position: absolute;
+    margin-top: 180px;
+    color: #000;
+    background: #fac032;
+    padding: 7px 25px;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transform: 0.3s;
+}
+.gallary .gallary_img_box .gallary_img:hover .gallary_btn {
+    opacity: 1;
+    transform: translateY(0);
 }
