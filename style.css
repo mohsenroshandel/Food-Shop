@@ -568,7 +568,7 @@ section .main_btn:hover i {
 
 /* Order */
 
-.order{
+.order {
     width: 100%;
     height: 100vh;
     padding: 70px 0;
@@ -576,19 +576,22 @@ section .main_btn:hover i {
     background-size: cover;
     background-position: center;
 }
-.order h1{
+
+.order h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #000;
     font-size: 55px;
 }
-.order h1 span{
+
+.order h1 span {
     color: #fac032;
     margin-right: 15px;
     font-family: mv boli;
 }
-.order h1 span:after{
+
+.order h1 span::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -597,26 +600,32 @@ section .main_btn:hover i {
     position: relative;
     bottom: 15px;
 }
-.order .order_main{
+
+.order .order_main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.order .order_main .order_img img{
+
+.order .order_main .order_img img {
     width: 600px;
 }
-.order .order_main form{
+
+.order .order_main form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 10px;
 }
-.order .order_main form .input p{
+
+.order .order_main form .input p {
     line-height: 25px;
 }
+
 .order .order_main form .input {
-margin: 5px;
+    margin: 5px;
 }
-.order .order_main form .input input{
+
+.order .order_main form .input input {
     width: 300px;
     height: 35px;
     padding: 0 10px;
@@ -625,14 +634,126 @@ margin: 5px;
     outline: none;
     border-radius: 3px;
 }
-.order .order_main form .input input:focus{
+
+.order .order_main form .input input:focus {
     border: 2px solid #fac032;
 }
-.order .order_main form .order_btn{
- padding: 10px 0;
- background: #fac032;
- color: #fff;
- width: 40%;
- text-align: center;   
- margin-top: 20px;
+
+.order .order_main form .order_btn {
+    padding: 10px 0;
+    background: #fac032;
+    color: #fff;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
 }
+
+/* Team */
+
+.team {
+    width: 100%;
+    height: 90vh;
+    background-image: url(img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.team h1 span {
+    color: #fac032;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.team h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac032;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 13%;
+
+}
+
+.team .team_box .profile {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.team .team_box .profile:hover {
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team_box .profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.team .team_box .profile:hover img {
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transform: 0.5s;
+}
+.team .team_box .profile:hover .info {
+    top: 60%;
+}
+
+.team .team_box .profile .info .name {
+    color: #fac032;
+    margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+.team .team_box .profile .info .team_icon i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.team .team_box .profile .info .team_icon i:hover{
+    color: #fac032;
+}
+
